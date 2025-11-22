@@ -1,0 +1,52 @@
+
+body {
+  font-family: "Vazir", sans-serif;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: white;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  max-width: 600px;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* 📱 ریسپانسیو با مدیا کیوری */
+@media (max-width: 600px) {
+  .card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit:cover ;
+@media (max-width: 600px) {
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
